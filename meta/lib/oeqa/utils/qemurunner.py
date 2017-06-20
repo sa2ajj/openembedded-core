@@ -122,7 +122,7 @@ class QemuRunner:
             return False
 
 
-        bootparams = 'console=tty1 console=ttyS0,115200n8 printk.time=1'
+        bootparams = 'console=tty0,115200n8 printk.time=1'
         if extra_bootparams:
             bootparams = bootparams + ' ' + extra_bootparams
 
